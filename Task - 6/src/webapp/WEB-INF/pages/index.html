@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Messages</title>
+    <!--<div>-->
+    <!--    <th:block th:each="msg : ${messages}">-->
+    <!--        <h1 th:text="${msg}"></h1>-->
+    <!--    </th:block>-->
+    <!--</div>-->
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Занять всю высоту экрана */
+            background-color: #f0f0f0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <a th:href="@{/cars}" class="button">To Cars</a>
+</div>
+</body>
+</html>
